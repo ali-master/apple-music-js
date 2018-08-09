@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import WelcomeScreen from './components/welcome';
 import ViewContainer from './views';
@@ -16,7 +16,7 @@ const Container = styled.div`
    flex-direction: column;
 `;
 
-export default class SpotiFree extends Component {
+export default class SpotiFree extends PureComponent {
    render() {
       return (
          <Container>
